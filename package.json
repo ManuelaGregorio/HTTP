@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bruno": "^0.0.0",
+    "json-server": "^0.17.4"
+  }
+}
