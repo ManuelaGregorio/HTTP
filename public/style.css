@@ -1,0 +1,111 @@
+/* Todas as páginas */
+h1, th, h3{
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    height: 97vh; /* Define a altura do body para ocupar 100% da altura da janela de visualização */
+    background-image: linear-gradient(to bottom, #ced5e1, #00bfff); /* Gradiente linear de azul */
+    background-repeat: no-repeat; /* Não repetir o fundo */
+    background-size: cover;
+}
+.botaos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Fim de Todas Páginas */
+/* Botão Estilizado */
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .btn-white {
+    background-color: #fff;
+    color: black;
+  }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    border-radius: 100px;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  .btn-white::after {
+    background-color: #fff;
+  }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  .btn-animated {
+    -webkit-animation: moveInBottom 5s ease-out;
+            animation: moveInBottom 5s ease-out;
+    -webkit-animation-fill-mode: backwards;
+}
+/* Fim do botão Estilizado */
+td, th{
+    text-align: center;
+    padding: 20px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+th{
+    background-color: white;
+}
+input {
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    outline: none; 
+}
+
+input:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+input:disabled {
+    background-color: #f2f2f2; 
+    color: #666; 
+}
+button {
+    display: inline-block; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:active {
+    background-color: white; 
+}
