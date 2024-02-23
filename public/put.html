@@ -7,21 +7,26 @@
     <title>Procurar</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  <div class="botaos">
+<body>  
+    <div class="cabecalho"></div>
+    <div class="botaos">
     <div class="text-box">
         <a href="index.html" class="btn btn-white btn-animate">HOME</a>
     </div>
     <div class="text-box">
-        <a href="Post.html" class="btn btn-white btn-animate">CADASTRO</a>
+        <a href="Post.html" class="btn btn-white btn-animate">CADASTRAR</a>
     </div>
     <div class="text-box">
-        <a href="put.html" class="btn btn-white btn-animate">LOGIN</a>
+        <a href="put.html" class="btn btn-white btn-animate">ATUALIZAR</a>
     </div>
     <div class="text-box">
         <a href="delete.html" class="btn btn-white btn-animate">DELETAR</a>
     </div>
+    <div class="text-box">
+        <a href="delete.html" class="btn btn-white btn-animate">LOGIN</a>
     </div>
-    <form>
+    </div>
+    
         <center><br><br><br>
         <h3>PROCURAR TUTOR:</h3>
         <label>ID:</label>
@@ -40,24 +45,9 @@
         <button onclick="atualizarDados()" value="Atualizar">Atualizar</button>
         <br>
         </center>
+    
 
-        <center>
-
-            <br><br><br>
-            <h3>PESSOAS QUE ADOTARAM</h3>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>ESPÉCIE</th>
-                    <th>TUTOR</th>
-                    <th>CPF DO TUTOR</th>
-                </tr>
-                <tbody id="tabela-corpo"></tbody>
-            </table>
-            </center>
-    </form>
-
-     <script>
+    <script>
         //GET-PUT   
     function buscarDados() {
         const cpf = document.getElementById('cpfAtualizar').value;
@@ -106,25 +96,7 @@
             });
             
         }
-
-         //GET
-      fetch(`pessoas`)
-      .then(response => response.json())
-      .then(data => {
-          const tabela = document.getElementById('tabela-corpo');
-          //Utilizado o loop ForEach para interar cada objeto no array retornado a API
-          data.forEach((objeto) => {
-              //Adicionado essa string de template ao conteudo HTML do corpo da tabela.
-              const linha = `<tr>
-                  <td>${objeto.id}</td>
-                  <td>${objeto.nome}</td>
-                  <td>${objeto.idade}</td>
-                  <td>${objeto.cpf}</td>
-              </tr>`;
-              tabela.innerHTML += linha;
-          })
-      })
-     </script>
+    </script>
     
 </body>
 </html>

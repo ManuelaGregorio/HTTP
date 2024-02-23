@@ -1,24 +1,45 @@
-/* Todas as páginas */
+/* Index - todas as páginas */
 h1, th, h3{
-    font-family: 'Poppins',sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, Tahoma, Geneva, Verdana, sans-serif;
 
-}
-body{
-    font-family: 'Poppins',sans-serif;
-    height: 97vh; /* Define a altura do body para ocupar 100% da altura da janela de visualização */
-    background-image: linear-gradient(to bottom, #ced5e1, #00bfff); /* Gradiente linear de azul */
-    background-repeat: no-repeat; /* Não repetir o fundo */
-    background-size: cover;
-}
-.botaos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
-/* Fim de Todas Páginas */
+body {
+  background-image: url('img/wallpaper.jpg.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat
+}
+td, th{
+  text-align: center;
+  padding: 20px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+}
+th{
+  background-color: black;
+  color: white;
+}
+
+.cabecalho{
+  height: 250px;
+}
+.tabela{
+  background: #fff;
+  width: 450px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+/* Index - Fim de Todas Páginas */
 /* Botão Estilizado */
+.botaos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
   .btn:link,
   .btn:visited {
     text-transform: uppercase;
@@ -61,32 +82,20 @@ body{
     -webkit-animation-fill-mode: backwards;
 }
 /* Fim do botão Estilizado */
-td, th{
-    text-align: center;
-    padding: 20px; 
-    text-align: center; 
-    border: 1px solid #ddd; 
-}
-th{
-    background-color: white;
+/* Input Estilizado */
+label {
+  display: block; 
+  margin-bottom: 5px; 
+
 }
 input {
-    padding: 10px;
-    font-size: 16px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    outline: none; 
-}
 
-input:focus {
-    border-color: #007bff; 
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-
-input:disabled {
-    background-color: #f2f2f2; 
-    color: #666; 
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-size: 16px; 
+  box-sizing: border-box;
+  margin-bottom: 10px; 
 }
 button {
     display: inline-block; 
@@ -109,3 +118,5 @@ button:hover {
 button:active {
     background-color: white; 
 }
+/* Input não finalizado */
+
